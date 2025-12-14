@@ -1,0 +1,1108 @@
+@font-face {
+    font-family: 'Qilka';
+    src: url('font/Qilka-Bold copy.otf') format('opentype');
+    font-weight: 700;
+}
+
+    body {
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+    }
+
+    header {
+        background-color: #b81414;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .logo img {
+    height: 50px; 
+    width: auto;
+    display: block;
+    }
+
+    .nav-links {
+        display: flex;
+        gap: 4vw;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+        font-family: 'Qilka', sans-serif;
+        font-weight: 700;
+    }
+
+    a.active {
+        text-decoration: underline;
+    }
+
+    a[href="home.html"] {
+        text-decoration: underline;
+    }
+
+    .hamburger {
+        display: none;
+        flex-direction: column;
+        cursor: pointer;
+        gap: 5px;
+    }
+
+    .hamburger span {
+        height: 3px;
+        width: 25px;
+        background: white;
+        border-radius: 2px;
+    }
+
+    main.welcome {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('../pictures/hero/home/4 (1).jpg');
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        padding: 10vh 15vh 10vh 15vh;
+    }
+
+    section.welcome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0vh;
+    }
+
+    section.welcome img {
+        width: auto;
+        height: 25vh;
+    }
+
+    section.welcome h1 {
+        font-size: 120px;
+        font-family: 'Qilka', sans-serif;
+        font-weight: 700;
+        letter-spacing: 2px;
+        line-height: 1.1;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding: 50px 0;
+        color: #b81414;
+        -webkit-text-stroke: 1px white;
+        text-shadow: 1px 1px 0 white, -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white;
+    }
+
+    section.welcome button {
+        font-size: 30px;
+        color: white;
+        background-color: #b81414;
+        border: none;
+        width: 15vw;
+        height: 7vh;
+        border-radius: 100px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    section.welcome button:hover {
+        transform: scale(1.1);
+    }
+
+    main.learn {
+        background-color: #bc1823;
+        display: flex;
+        justify-content: center;
+        gap: 5vw;
+        padding: 0vh 20vh 0vh 20vh;
+
+    }
+
+    section.picture {
+        background-color: white;
+        display: flex;
+    }
+
+    section.picture img {
+        width: auto;
+        height: auto;
+        max-width: 100%;
+    }
+
+    section.description {
+        padding: 5vh 0vh 5vh 0vh;
+        ;
+        color: white;
+    }
+
+    main.learn button {
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        border: none;
+        width: 15vw;
+        height: 7vh;
+        border-radius: 100px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    main.learn button:hover {
+        transform: scale(1.1);
+    }
+
+    main.learn h2 {
+        font-weight: bold;
+        padding-top: 20px;
+        font-size: 21px;
+        font-family: 'Qilka', sans-serif;
+    }
+
+    main.learn p {
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    p.sentence {
+        text-align: justify;
+        width: 30vw;
+
+    }
+
+    main.offer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+    }
+
+    main.offer section.header1 {
+        font-family: 'Qilka', sans-serif;
+        font-size: 40px;
+        margin-top: 0vh;
+    }
+
+    main.offer section.header1 h1 {
+        margin-bottom: 0;
+        font-size: 80px;
+        text-align: center;
+    }
+
+    section.subheader1 {
+        padding-bottom: 3vh;
+        text-align: center;
+    }
+
+    section.subheader1 p {
+        margin-bottom: 2vh;
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+    }
+
+    section.items1 {
+        display: flex;
+        gap: 5vw;
+        justify-content: center;
+        flex-wrap: wrap; 
+    }
+
+    section.items1 items {
+        background-color: white;
+        border-radius: 20px;
+        width: 20vw;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.3s ease;
+        margin-bottom: 3vh;
+    }
+
+    section.items1 items:hover {
+        transform: scale(1.05);
+    }
+
+    section.items1 items img {
+        width: 100%; 
+        height: auto;
+        box-shadow: 0 0px 10px 5px rgba(0, 0, 0, 0.8);
+        border-radius: 15px;
+    }
+
+    section.items1 p {
+        text-align: center;
+        padding: 0 1vw;
+    }
+
+    section.button {
+        margin-top: 6vh;
+    }
+
+    main.offer button {
+        display: block;
+        margin: 0 auto 8vh auto;
+        font-size: 20px;
+        color: white;
+        background-color: #b81414;
+        border: none;
+        width: 35vw;
+        max-width: 230px; 
+        height: 7vh;
+        border-radius: 100px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    main.offer button:hover {
+        transform: scale(1.1);
+    }
+
+    main.news { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        padding: 3vh 10vw;
+    }
+
+    main.news section.header1 {
+        font-family: 'Qilka', sans-serif;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    main.news section.header1 h1 {
+        font-size: 80px;
+        margin-bottom: 0.5vh;
+    }
+
+    main.news section.subheader1 {
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 3vh;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    main.news section.items1 {
+        display: flex;
+        gap: 5vw;
+        justify-content: center;
+        flex-wrap: wrap; 
+        margin-bottom: 4vh;
+    }
+
+    main.news section.items1 items {
+        flex: 1 1 20vw; 
+        max-width: 20vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    main.news section.items1 items img {
+        width: 100%;
+        height: auto;
+        border-radius: 15px;
+        box-shadow: 0 0px 10px 5px rgba(0, 0, 0, 0.8);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    main.news section.items1 items img:hover {
+        transform: scale(1.05);
+    }
+
+    main.news button {
+        display: block;
+        margin: 0 auto 6vh auto;
+        font-size: 20px;
+        color: white;
+        background-color: #b81414;
+        border: none;
+        width: 25vw;
+        max-width: 200px;
+        height: 7vh;
+        border-radius: 100px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    main.news button:hover {
+        transform: scale(1.1);
+    }
+
+    main.services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        gap: 3vh;
+        padding: 3vh 10vw;
+    }
+
+    main.services p {
+        text-align: center;
+        margin-bottom: 0;
+        line-height: 2;
+        font-size: 1.2rem;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    section.servicesheader h1 {
+        font-family: 'Qilka', sans-serif;
+        font-size: 55px;
+        margin-top: 6vh;
+        margin-bottom: 2vh;
+        text-align: center;
+    }
+
+    section.servicedec {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5vh;
+        max-width: 1000px;
+    }
+
+    section.servicedec section {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    main.services button {
+        display: block;
+        margin: 0 auto 8vh auto;
+        font-size: 20px;
+        color: white;
+        background-color: #b81414;
+        border: none;
+        width: 25vw;
+        max-width: 200px;
+        height: 7vh;
+        border-radius: 100px;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+    main.services button:hover {
+        transform: scale(1.1);
+    }
+
+    .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    }
+
+    .modal-content {
+        display: flex;
+        background-color: white;
+        border-radius: 20px;
+        width: 70vw;
+        padding: 3vh 3vw;
+        gap: 3vw;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .modal-content img {
+        max-width: 28vw;
+        height: auto;
+        object-fit: contain;
+        box-shadow: 0 0px 10px 5px rgba(0,0,0,0.8);
+        border-radius: 10px;
+    }
+
+    .modal-description {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        text-align: center;
+    }
+
+    .modal-description p {
+        font-size: 30px;
+        line-height: 1.6;
+        margin: 10px 0;
+    }
+
+    #modal-ingredients {
+        font-style: italic;
+        color: #666;
+        margin-top: 20px;
+        font-size: 30px;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3vw;
+        background-color: #b81414;
+        color: white;
+        padding: 0.5vh 2vw;
+        max-height: 30vh; 
+        overflow-y: auto; 
+    }
+
+    footer section {
+        display: flex;
+        flex-direction: column;
+        line-height: 1; 
+        margin-bottom: 1vh;
+        min-width: 100px;
+    }
+
+    footer section h3 {
+        font-weight: 400;
+        font-size: 12px; 
+        margin-bottom: 0.5vh;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    footer section p {
+        margin-bottom: 3px;
+        font-size: 12px; 
+        font-family: 'Poppins', sans-serif;
+    }
+
+    footer section:first-child img {
+        width: 20vw;
+        max-width: 200px; 
+        margin-bottom: 0.5vh;
+    }
+
+    footer section:last-child section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1vw;
+        margin-top: 5px;
+    }
+
+    footer section:last-child section img {
+        margin-top: 10px;
+        width: 5vw; 
+        max-width: 35px;
+    }
+    footer section p a {
+        color: white;
+        text-decoration: none;
+        font-family: inherit;
+        font-size: inherit;
+    }
+
+@media screen and (max-width: 768px) {
+    header {
+        justify-content: center; 
+        position: relative;
+    }
+
+    .logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .hamburger {
+        display: flex;
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+        z-index: 1000;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 10vh;
+        right: 0;
+        height: 90vh;
+        width: 100%;
+        background-color: #b81414;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 2rem;
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+         padding-top: 2vh;
+    }
+
+    .nav-links.show {
+        transform: translateY(0);
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    main.welcome {
+        padding: 8vh 10vh;
+    }
+
+    section.welcome img {
+        height: 20vh;
+    }
+
+    section.welcome h1 {
+        font-size: 80px;
+        padding: 30px 0;
+    }
+
+    section.welcome button {
+        width: 20vw;
+        height: 6vh;
+        font-size: 24px;
+    }
+
+    main.learn {
+        flex-direction: column;
+        padding: 0;
+        gap: 2vh;
+    }
+
+    section.picture img {
+        width: 100%;
+        height: auto; 
+        max-height: none;
+    }
+
+    section.description {
+        padding: 3vh 5vw;
+    }
+
+    p.sentence {
+        width: 90%;
+        font-size: 18px;
+    }
+
+    main.learn button {
+        width: 40vw;
+        font-size: 18px;
+    }
+    main.offer section.header1 h1 {
+        font-size: 60px;
+    }
+
+    section.subheader1 p {
+        font-size: 24px;
+    }
+
+    section.items1 items {
+        width: 30vw;
+    }
+
+    section.items1 items img {
+        width: 100%;
+    }
+
+    main.offer button {
+        width: 25vw;
+        font-size: 18px;
+    }
+
+    main.news section.header1 h1 {
+        font-size: 60px;
+    }
+
+    main.news section.subheader1 {
+        font-size: 24px;
+    }
+
+    main.news section.items1 items {
+        flex: 1 1 30vw;
+        max-width: 30vw;
+    }
+
+    main.news button {
+        width: 25vw;
+        font-size: 18px;
+    }
+    section.servicesheader h1 {
+        font-size: 45px;
+    }
+
+    section.servicedec section {
+        font-size: 24px;
+        padding: 0 5vw;
+    }
+    main.services button {
+        width: 25vw;
+        font-size: 18px;
+    }
+
+        .modal-content {
+            width: 80vw;
+            gap: 2vw;
+        }
+
+        .modal-content img {
+            max-width: 35vw;
+        }
+
+        .modal-description p {
+            font-size: 25px;
+        }
+
+        #modal-ingredients {
+            font-size: 25px;
+        }
+    footer {
+        flex-direction: row; 
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3vw;
+        padding: 2vh 4vw;
+        max-height: 50vh; 
+        overflow-y: auto;
+    }
+
+    footer section {
+        min-width: 120px;
+        margin-bottom: 1vh;
+    }
+
+    footer section h3 {
+        font-size: 18px;
+        margin-bottom: 0.5vh;
+    }
+
+    footer section p {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    footer section:first-child img {
+        width: 10vw;
+        max-width: 90px;
+    }
+
+    footer section:last-child section img {
+        width: 3vw;
+        max-width: 25px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    main.welcome {
+        padding: 5vh 5vw;
+    }
+
+    section.welcome img {
+        height: 15vh;
+    }
+
+    section.welcome h1 {
+        font-size: 50px;
+        padding: 20px 0;
+    }
+
+    section.welcome button {
+        width: 20vw;
+        height: 5vh;
+        font-size: 18px;
+    }
+    section.picture img {
+        width: 100%;
+        height: 60vh; 
+    }
+
+    main.learn h2 {
+        font-size: 18px;
+    }
+
+    main.learn p {
+        font-size: 16px;
+    }
+
+    p.sentence {
+        width: 95%;
+    }
+
+    main.learn button {
+        width: 25vw;
+        font-size: 16px;
+        height: 5vh;
+    }
+    main.offer section.header1 h1 {
+        font-size: 40px;
+        text-align: center;
+    }
+
+    section.subheader1 p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    section.items1 {
+        display: flex;
+        flex-direction: column;   
+        align-items: center;      
+        gap: 4vh;
+        width: 40%;
+    }
+
+    section.items1 items {
+        width: 90%;               
+        max-width: 600px;         
+        margin-left: 0;         
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main.offer button {
+        width: 20vw;
+        font-size: 14px;
+        height: 5vh;
+    }
+
+    main.news section.header1 h1 {
+        font-size: 42px;
+        text-align: center;
+    }
+
+    main.news section.subheader1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    main.news section.items1 {
+        display: flex;
+        flex-direction: column;  
+        align-items: center;     
+        gap: 4vh;
+        width: 50%;
+    }
+
+    main.news section.items1 items {
+        width: 90%;
+        max-width: 600px;
+        flex: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 3vh;
+    }
+
+    main.news button {
+        width: 20vw;
+        font-size: 14px;
+        height: 5vh;
+    }
+
+    section.servicesheader h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    section.servicedec section {
+        font-size: 18px;
+        padding: 0 5vw;
+        text-align: center;
+    }
+
+    main.services button {
+        width: 50%;
+        font-size: 14px;
+        height: 5vh;
+    }
+    .modal-content {
+            flex-direction: column;
+            width: 50vw;
+            height: auto;
+            padding: 2vh 2vw;
+            gap: 2vh;
+        }
+
+        .modal-content img {
+            max-width: 60%;
+        }
+
+        .modal-description p,
+        #modal-ingredients {
+            font-size: 14px;
+        }
+        main.addons {
+        padding: 5vh 5vw;
+        }
+
+        main.addons h1 {
+            font-size: 50px;
+        }
+
+        main.addons h3 {
+            font-size: 17px;
+        }
+
+        main.addons p {
+            font-size: 16px;
+        }
+    footer {
+        flex-direction: column; 
+        align-items: center;
+        padding: 2vh 3vw;
+        gap: 2.5vh;
+        max-height: 50vh;
+        overflow-y: auto;
+    }
+
+    footer section {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        line-height: 1.3;
+        margin-bottom: 1vh;
+    }
+
+    footer section h3 {
+        font-size: 16px;
+        margin-bottom: 0.5vh;
+    }
+
+    footer section p {
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+    footer section:first-child img {
+        width: 30vw;
+        max-width: 150px;
+        margin-bottom: 1vh;
+    }
+
+    footer section:last-child section {
+        justify-content: center;
+        gap: 4vw;
+        margin-top: 5px;
+    }
+
+    footer section:last-child section img {
+        width: 8vw;
+        max-width: 25px;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    main.welcome {
+        padding: 5vh 3vw;
+    }
+
+    section.welcome img {
+        height: 12vh;
+    }
+
+    section.welcome h1 {
+        font-size: 35px;
+        padding: 15px 0;
+    }
+
+    section.welcome button {
+        width: 35vw;
+        height: 5vh;
+        font-size: 16px;
+    }
+
+    section.picture img {
+        width: 100%;
+        height: 35vh;
+    }
+
+    main.learn h2 {
+        text-align: center;
+        font-weight: bold;
+        padding-top: 20px;
+        font-size: 21px; 
+        font-size: 16px;
+    }
+
+    main.learn p {
+        font-size: 14px;
+        padding-left: 20px;
+        margin-bottom: 10px;
+    }
+
+    p.sentence {
+        width: 80%;
+    }
+
+    main.learn button {
+        margin-top: 20px;
+        width: 40vw;
+        font-size: 14px;
+        height: 5vh;
+    }
+    main.offer section.header1 h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    main.offer section.header1 h1 {
+        font-size: 35px;
+        text-align: center;
+    }
+
+    section.subheader1 p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    section.items1 {
+        display: flex;
+        flex-direction: column;   
+        align-items: center;      
+        justify-content: center;
+        gap: 4vh;
+        width: 50%;
+    }
+
+    section.items1 items {
+        width: 100%;             
+        max-width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;     
+    }
+
+    main.offer button {
+        margin-top: -10px;
+        width: 40vw;
+        font-size: 12px;
+        height: 5vh;
+    }
+
+    main.news section.header1 h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    main.news section.subheader1 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    main.news section.items1 {
+        display: flex;
+        flex-direction: column;   
+        align-items: center;      
+        justify-content: center;  
+        gap: 4vh;
+        width: 50%;
+    }
+
+    main.news section.items1 items {
+        width: 100%;
+        max-width: 90vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;      
+        flex: none;               
+    }
+
+    main.news button {
+        width: 40vw;
+        font-size: 14px;
+        height: 5vh;
+    }
+
+    section.servicesheader h1 {
+        font-size: 28px;
+        text-align: center;
+    }
+
+    section.servicedec section {
+        font-size: 16px;
+        padding: 0 5vw;
+        text-align: center;
+    }
+
+    main.services button {
+        width: 40vw;
+        font-size: 14px;
+        height: 5vh;
+    }
+
+    .modal-content {
+            width: 60vw;
+            border-radius: 10px;
+        }
+
+        .modal-content img {
+            max-width: 60%;
+        }
+
+        .modal-description p,
+        #modal-ingredients {
+            font-size: 12px;
+        }
+        main.addons {
+        padding: 5vh 3vw;
+        }
+
+        main.addons h1 {
+            font-size: 35px;
+        }
+
+        main.addons h3 {
+            font-size: 15px;
+        }
+
+        main.addons p {
+            font-size: 14px;
+        }
+     footer {
+        flex-direction: column;
+        align-items: center;
+        padding: 2vh 3vw;
+        max-height: 50vh; 
+        overflow-y: auto;
+    }
+
+    footer section {
+        width: 100%;
+        text-align: center;
+        align-items: center;
+        line-height: 1.3;
+        margin-bottom: 1vh;
+    }
+
+    footer section h3 {
+        font-size: 16px;
+        margin-bottom: 0.5vh;
+    }
+
+    footer section p {
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    footer section:first-child img {
+        width: 40vw;
+        max-width: 200px;
+        margin-bottom: 1vh;
+    }
+
+    footer section:last-child section {
+        justify-content: center;
+        gap: 5vw;
+        margin-top: 5px;
+    }
+
+    footer section:last-child section img {
+        width: 10vw;
+        max-width: 25px;
+        height: auto;
+    }
+}
